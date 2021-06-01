@@ -4,7 +4,7 @@ import useBreedList from "./useBreedList";
 import Results from "./Results";
 import { PetAPIResponse, Animal, Pet } from './ApiResponseTypes';
 
-const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
+const ANIMALS: Animal[]= ["bird", "cat", "dog", "rabbit", "reptile"];
 
 const SearchParams:FunctionComponent = () => {
   const [animal, updateAnimal] = useState("" as Animal);
